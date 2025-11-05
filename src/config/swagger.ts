@@ -16,7 +16,8 @@ const options: swaggerJSDoc.Options = {
   },
   apis: [
     './src/routes/usuarioRoutes.ts',
-    './src/routes/eventoRoutes.ts'
+    './src/routes/eventoRoutes.ts',
+    './src/routes/comentarioRoutes.ts'
   ],
 };
 
