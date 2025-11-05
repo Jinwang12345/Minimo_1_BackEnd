@@ -51,7 +51,7 @@ const router = Router();
 
 /**
  * @swagger
- * /api/comentario:
+ * /api/comment:
  *   post:
  *     summary: Crear un nuevo comentario
  *     tags: [Comentarios]
@@ -71,7 +71,7 @@ router.post('/', createComentario);
 
 /**
  * @swagger
- * /api/comentario:
+ * /api/comment:
  *   get:
  *     summary: Obtener todos los comentarios (paginado)
  *     tags: [Comentarios]
@@ -111,7 +111,7 @@ router.get('/', getAllComentarios);
 
 /**
  * @swagger
- * /api/comentario/search:
+ * /api/comment/search:
  *   get:
  *     summary: Buscar comentarios por contenido
  *     tags: [Comentarios]
@@ -142,7 +142,7 @@ router.get('/search', searchComentarios);
 
 /**
  * @swagger
- * /api/comentario/evento/{eventoId}:
+ * /api/comment/evento/{eventoId}:
  *   get:
  *     summary: Obtener comentarios de un evento específico
  *     tags: [Comentarios]
@@ -173,7 +173,7 @@ router.get('/evento/:eventoId', getComentariosByEvento);
 
 /**
  * @swagger
- * /api/comentario/{id}:
+ * /api/comment/{id}:
  *   get:
  *     summary: Obtener un comentario por ID
  *     tags: [Comentarios]
@@ -194,7 +194,7 @@ router.get('/:id', getComentarioById);
 
 /**
  * @swagger
- * /api/comentario/{id}:
+ * /api/comment/{id}:
  *   put:
  *     summary: Actualizar un comentario
  *     tags: [Comentarios]
@@ -226,7 +226,7 @@ router.put('/:id', updateComentario);
 
 /**
  * @swagger
- * /api/comentario/{id}/like:
+ * /api/comment/{id}/like:
  *   put:
  *     summary: Dar like a un comentario
  *     tags: [Comentarios]
@@ -247,7 +247,7 @@ router.put('/:id/like', likeComentario);
 
 /**
  * @swagger
- * /api/comentario/{id}:
+ * /api/comment/{id}:
  *   delete:
  *     summary: Eliminar un comentario
  *     tags: [Comentarios]
